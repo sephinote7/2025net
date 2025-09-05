@@ -38,12 +38,60 @@
   display: flex;
   align-items: center;
   color: white;
+  margin-bottom: 100px;
 }
 
 /* content */
-
-.cont01 {
-  height: 300px;
+.content {
+  margin-bottom: 160px;
 }
+
+.content .cont01 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 200px;
+  margin-bottom: 150px;
+  /* background-color: darkorchid; */
+}
+
+.cont02 .card {
+  display: flex;
+  flex-direction: column;
+}
+
+.cont02 .card img {
+  width: 385px;
+}
+
+.cardTxt > .title {
+  background-image: url(../img/r_arrow.png);
+  background-repeat: no-repeat;
+  background-position: 33%;
+}
+
+.cardTxt {
+  width: 385px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding: 20px 16px 0px;
+}
+
+#cardIn {
+  display: flex;
+  justify-content: space-between;
+}
+
+#cardIn img:hover {
+  transform: translate(0, -20px);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+#cardIn img {
+  transition: 0.3s;
+}
+
+/* content02 */
 
 /* footer */
