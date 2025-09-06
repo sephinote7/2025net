@@ -3,40 +3,135 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      html {
-        height: 100%;
-      }
+    <title>넷마블문화재단</title>
 
-      body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 200%;
-        background: darkgoldenrod;
-      }
+    <!-- css -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
-      .box {
-        width: 200px;
-        height: 200px;
-        background: dodgerblue;
-      }
-
-      .top {
-        width: 50px;
-        height: 50px;
-        background: darkred;
-        border-radius: 25px;
-        text-align: center;
-        position: fixed;
-        right: 100px;
-        bottom: 100px;
-      }
-    </style>
+    <!-- script -->
+    <script src="js/card.js"></script>
+    <script src="js/newsBody.js"></script>
   </head>
   <body>
-    <div class="box">1</div>
-    <div class="top">top</div>
+    <!-- header -->
+
+    <div class="header">
+      <div class="container wrap">
+        <h1>
+          <a href="#"><img src="img/logo.png" alt="넷마블문화재단" /></a>
+        </h1>
+        <nav class="menuWrap">
+          <ul>
+            <li><a href="#" class="navMenu">재단소개</a></li>
+            <li><a href="#" class="navMenu">재단활동</a></li>
+            <li><a href="#" class="navMenu">재단소식</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- visual -->
+
+    <div class="visual">
+      <div class="container">
+        <h2 class="title">게임아카데미</h2>
+        <h2 class="sub">미래의 꿈 게임에 담다</h2>
+      </div>
+    </div>
+
+    <!-- content -->
+    <div class="content">
+      <div class="container cont01">
+        <h3 class="title">문화를 만들고 인재를 키우고<br />마음을 나눕니다</h3>
+        <p class="txt1" style="display: block; position: absolute; right: 0; bottom: 0">
+          넷마블문화재단은 문화적 가치 확산을 통해 우리 사회의 미래 경쟁력을 높여 가고자<br />다양한 공익 활동을 전개해
+          나가고 있습니다.
+        </p>
+      </div>
+      <div class="container cont02">
+        <div id="cardIn">
+          <!-- <img src="img/C_img01.jpg" alt="Cardimg01" />
+          <div class="cardTxt">
+            <h6 class="title">문화 만들기</h6>
+            <p class="txt2">
+              게임을 기반으로 다양한 문화적 가치를 공유하고 누구나<br />즐겁게
+              참여할 수 있는 교육 및 여가 문화를 만들어 갑니다.
+            </p>
+          </div> -->
+        </div>
+      </div>
+
+      <script>
+        // cont02 카드 내용 script
+        document.getElementById('cardIn').innerHTML = cardData;
+      </script>
+    </div>
+
+    <!-- cont03 -->
+    <div class="cont03 container">
+      <div class="cont03Wrap">
+        <h5 class="title" style="font-weight: 400">
+          우리는 <span style="font-weight: 700">문화적 가치를 확산</span>하여 우리 사회의<br />미래 경쟁력을 높여갑니다
+        </h5>
+        <p class="txt2">주요 목적</p>
+      </div>
+      <div class="cont3img"></div>
+    </div>
+
+    <!-- contNews -->
+    <div class="contNews container">
+      <div class="newsHead">
+        <h3 class="title">재단소식</h3>
+        <div class="btnWrap">
+          <button onclick="">공지사항</button>
+          <button>뉴스룸</button>
+          <button>소셜미디어</button>
+        </div>
+      </div>
+
+      <div class="newsBody container" id="newsBodyInText">
+        <!-- newsbody JS코드 -->
+      </div>
+
+      <!-- newsbody 카드 script -->
+      <script>
+        document.getElementById('newsBodyInText').innerHTML = newsCrdData;
+      </script>
+    </div>
+
+    <!-- footer -->
+
+    <div class="footer">
+      <div class="footerWrap container">
+        <div class="footerHead">
+          <div class="footerLogo"></div>
+          <button>Family Site</button>
+        </div>
+        <p class="txt5" style="margin-bottom: 46px">
+          서울특별시 구로구 디지털로 26길 38 G-Tower 넷마블 <br />
+          Copyright © Netmarble Corp. All Rights Reserved.
+        </p>
+        <div class="policySns">
+          <p class="txt5 policy">
+            <a href="#">개인정보처리방침</a>
+            <span>|</span>
+            <a href="#">SNS 저작물 이용 동의서</a>
+            <span>|</span>
+            <a href="#">이메일 문의</a>
+            <span>|</span>
+            <a href="#">주무관청</a>
+            <span>|</span>
+            <a href="#">국세청</a>
+          </p>
+          <div class="sns">
+            <a href="https://www.facebook.com/netmarblefoundation/" class="facebook" target="_blank"></a>
+            <a href="https://www.youtube.com/channel/UCpYaDypxUY_bB6s23sfpuMg" class="youtube" target="_blank"></a>
+            <a href="https://www.instagram.com/netmarble_foundation/" class="instargram" target="_blank"></a>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
